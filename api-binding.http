@@ -1,0 +1,14 @@
+@api_binding_HostAddress = https://localhost:7188
+
+GET {{api_binding_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+POST {{api_binding_HostAddress}}/weatherupdate/London?temperature=99
+Some-Header: some header 1
+Content-Type: application/json
+
+{
+    "someBody1": "one",
+    "someBody2": "two"
+}
